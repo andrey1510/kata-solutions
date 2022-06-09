@@ -28,6 +28,7 @@ public class Alphabet {
 
 
     public static void main(String[] args) {
+
         System.out.println(position('c'));      // Variant 1 test
         System.out.println(position2('c'));     // Variant 2 test
     }

@@ -2,6 +2,9 @@ package level8;
 
 //https://www.codewars.com/kata/55a2d7ebe362935a210000b2/train/java
 
+import java.util.Arrays;
+import java.util.OptionalInt;
+
 public class SmallestIntegerFinder {
 
     public static int findSmallestInt(int[] args) {
@@ -18,3 +21,16 @@ public class SmallestIntegerFinder {
         System.out.println(findSmallestInt(new int[] {6, 4, 22, 15}));
     }
 }
+
+class SmallestIntegerFinderL {
+
+    public static int findSmallestInt(int[] args) {
+        return Arrays.stream(args).min().getAsInt();
+    }
+
+    public static void main(String[] args) {
+        System.out.println(findSmallestInt(new int[] {6, 4, 22, 15}));
+    }
+}
+
+

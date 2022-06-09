@@ -1,6 +1,8 @@
 package level8;
 //https://www.codewars.com/kata/53dc54212259ed3d4f00071c
 
+import java.util.Arrays;
+
 public class SumArray {
 
     public static double sum(double[] numbers) {
@@ -19,8 +21,19 @@ public class SumArray {
 
     public static void main(String[] args) {
         System.out.println(sum(new double[]{1, 2, 3}));
+        System.out.println(sum(new double[]{-1, 2, -3}));
         System.out.println(sum(new double[]{}));
     }
+}
 
+class SumArrayL {
+    public static double sum(double[] numbers) {
+        return Arrays.stream(numbers).sum();
+    }
 
+    public static void main(String[] args) {
+        System.out.println(sum(new double[]{1, 2, 3}));
+        System.out.println(sum(new double[]{-1, 2, -3}));
+        System.out.println(sum(new double[]{}));
+    }
 }

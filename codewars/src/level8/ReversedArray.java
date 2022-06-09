@@ -2,6 +2,7 @@ package level8;
 
 //https://www.codewars.com/kata/5583090cbe83f4fd8c000051/java
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class ReversedArray {
@@ -19,6 +20,5 @@ public class ReversedArray {
     }
 
 }
-//        for (int i = 0; i < nString.length(); i++) {
-//        arr[i] = nString.charAt(i);
-//        }
+
+
