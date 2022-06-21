@@ -15,12 +15,12 @@ public class WelcomeToCity {
 
     //Variant 2 (join)
     public String sayHello2(String [] name2, String city2, String state2){
-        return "Hello," + String.join(" ", name2) + "! Welcome to " + city2 + ", " + state2 + "!";
+        return "Hello, " + String.join(" ", name2) + "! Welcome to " + city2 + ", " + state2 + "!";
     }
 
     //Variant 3 (format, join)
     public String sayHello3(String [] name3, String city3, String state3){
-        return String.format("Hello,%s! Welcome to %s, %s!", String.join(" ", name3), city3, state3);
+        return String.format("Hello, %s! Welcome to %s, %s!", String.join(" ", name3), city3, state3);
     }
 
 
