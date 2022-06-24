@@ -1,4 +1,4 @@
-package tests;
+package testsLevel7;
 
 import level7.Maskify;
 import org.junit.Test;

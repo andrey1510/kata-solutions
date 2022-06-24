@@ -1,4 +1,4 @@
-package tests;
+package testsLevel8;
 
 import level8.CenturyFromYear;
 import org.junit.Test;

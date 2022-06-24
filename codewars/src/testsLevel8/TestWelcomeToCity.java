@@ -1,4 +1,4 @@
-package tests;
+package testsLevel8;
 
 import level8.WelcomeToCity;
 import org.junit.Test;

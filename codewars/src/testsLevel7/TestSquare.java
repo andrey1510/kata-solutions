@@ -1,4 +1,4 @@
-package tests;
+package testsLevel7;
 
 import level7.Square;
 import org.junit.Test;
