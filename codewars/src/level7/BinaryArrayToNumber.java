@@ -9,7 +9,12 @@ public class BinaryArrayToNumber {
     ////////////////////////// Variant 1 /////////////////////
 
     public static int ConvertBinaryArrayToInt(List<Integer> binary) {
-        return Integer.parseInt(String.valueOf(binary).replaceAll(", ", "").replaceAll("\\[", "").replaceAll("]", ""), 2);
+        return Integer.parseInt(
+                String.valueOf(binary)
+                        .replaceAll(", ", "")
+                        .replaceAll("\\[", "")
+                        .replaceAll("]", ""), 2
+        );
     }
 
     ////////////////////////// Variant 2 /////////////////////

@@ -4,6 +4,12 @@ package level7;
 
 public class DnaStrand {
     public static String makeComplement(String dna) {
-        return dna.replaceAll("T", "x").replaceAll("A", "T").replaceAll("x", "A").replaceAll("G", "y").replaceAll("C", "G").replaceAll("y", "C");
+        return dna
+                .replaceAll("T", "x")
+                .replaceAll("A", "T")
+                .replaceAll("x", "A")
+                .replaceAll("G", "y")
+                .replaceAll("C", "G")
+                .replaceAll("y", "C");
     }
 }

@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 public class ListFiltering {
     public static List<Object> filterList(final List<Object> list) {
         return list.stream()
-                .filter(e -> e instanceof Integer)
+                .filter(e -> e instanceof Integer) //  .filter(Integer.class::isInstance)
                 .filter(e -> (int) e >= 0)
                 .collect(Collectors.toList());
     }

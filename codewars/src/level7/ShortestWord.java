@@ -4,18 +4,15 @@ package level7;
 
 import java.util.Arrays;
 import java.util.Comparator;
-import java.util.List;
 
 public class ShortestWord {
 
 //////////////////// Variant 1 ////////////////////////////
 
     public static int findShort(String s) {
-        List<String> arr = Arrays.asList(s.split(" "));
-        String w = arr.stream()
+        return Arrays.stream(s.split(" "))
                 .min(Comparator.comparing(String::length))
-                .orElseThrow(null);
-        return w.length();
+                .orElseThrow(null).length();
     }
 
 //////////////////// Variant 2 ////////////////////////////

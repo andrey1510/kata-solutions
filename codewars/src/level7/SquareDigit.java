@@ -9,13 +9,16 @@ import java.util.stream.Collectors;
 
 public class SquareDigit {
     public int squareDigits(int n) {
-        String s = String.valueOf(n);
-        int[] i = Arrays.stream(s.split(""))
+        int[] i = Arrays.stream(String.valueOf(n).split(""))
                 .mapToInt(Integer::parseInt)
                 .map(e -> e*e)
                 .toArray();
-        String w = Arrays.toString(i);
-        return Integer.parseInt(w.replaceAll(", ", "").replaceAll("\\[", "").replaceAll("]", ""));
+        return Integer.parseInt(
+                Arrays.toString(i)
+                        .replaceAll(", ", "")
+                        .replaceAll("\\[", "")
+                        .replaceAll("]", "")
+        );
     }
 
 ///////////////////////////// Variant 2 ////////////////////////////////////
