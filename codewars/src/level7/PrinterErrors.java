@@ -1,3 +1,5 @@
+// https://www.codewars.com/kata/56541980fa08ab47a0000040
+
 package level7;
 
 public class PrinterErrors {
@@ -11,7 +13,7 @@ public class PrinterErrors {
         return l + "/" + s.length();
     }
 
-/////////////////////////// Variant 2 ////////////////////////////////////
+/////////////////////////// Community variant ////////////////////////////////////
 
     public static String printerError2(String s2) {
         return s2.replaceAll("[a-m]", "").length() + "/" + s2.length();

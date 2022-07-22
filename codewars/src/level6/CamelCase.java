@@ -1,3 +1,4 @@
+//https://www.codewars.com/kata/517abf86da9663f1d2000003
 package level6;
 
 import java.util.Arrays;
@@ -14,10 +15,10 @@ public class CamelCase {
         return String.join("", arr);
     }
 
-    //////////////////////// Variant 2 ////////////////////////////////
+    //////////////////////// Community variant ////////////////////////////////
 
-    public static String toCamelCase2(String s2){
-        String[] arr = s2.split("[-_]");
+    public static String toCamelCase2(String s){
+        String[] arr = s.split("[-_]");
         return Arrays.stream(arr, 1, arr.length)
                 .map(e -> e.substring(0, 1).toUpperCase() + e.substring(1))
                 .reduce(arr[0], String::concat);

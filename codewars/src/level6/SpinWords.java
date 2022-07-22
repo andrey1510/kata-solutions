@@ -19,10 +19,10 @@ public class SpinWords {
         return String.join(" ", sArr); // better than:   Arrays.toString(sArr).replaceAll(",", "").replaceAll("\\[", "").replaceAll("]", "");
     }
 
-    ////////////////////////////// Variant 2 ///////////////////////////
+    ////////////////////////////// Community variant ///////////////////////////
 
-    public String spinWords2(String sentence2) {
-        return Arrays.stream(sentence2.split(" "))
+    public String spinWords2(String sentence) {
+        return Arrays.stream(sentence.split(" "))
                 .map(e -> e.length() > 4 ? new StringBuilder(e).reverse().toString() : e)
                 .collect(Collectors.joining(" "));
     }

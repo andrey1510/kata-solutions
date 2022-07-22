@@ -17,11 +17,13 @@ public class BinaryArrayToNumber {
         );
     }
 
-    ////////////////////////// Variant 2 /////////////////////
+    ////////////////////////// Community variant /////////////////////
 
     // ToDo
 
-    public static int ConvertBinaryArrayToInt2(List<Integer> binary2) {
-        return binary2.stream().reduce((a, b) -> a*2+b).orElseThrow(null);
+    public static int ConvertBinaryArrayToInt2(List<Integer> binary) {
+        return binary.stream()
+                .reduce((a, b) -> a*2+b)
+                .orElseThrow(null);
     }
 }

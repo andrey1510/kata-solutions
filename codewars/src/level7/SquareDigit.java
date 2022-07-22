@@ -21,10 +21,10 @@ public class SquareDigit {
         );
     }
 
-///////////////////////////// Variant 2 ////////////////////////////////////
+///////////////////////////// Community variant ////////////////////////////////////
 
-    public int squareDigits2(int n2) {
-        return Integer.parseInt(String.valueOf(n2)
+    public int squareDigits2(int n) {
+        return Integer.parseInt(String.valueOf(n)
                 .chars()
                 .map(e -> Integer.parseInt(String.valueOf((char)e)))
                 .map(e -> e*e)
