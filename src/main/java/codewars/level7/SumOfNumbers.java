@@ -12,13 +12,13 @@ public class SumOfNumbers {
         List<Integer> numbersList = new ArrayList<>(Arrays.asList(a, b)).stream()
                 .sorted()
                 .collect(Collectors.toList());
-        return IntStream.of(IntStream.rangeClosed(numbersList.get(0), numbersList.get(1)).sum())
-                .findFirst()
-                .getAsInt();    // orElse(0);
+        return IntStream.rangeClosed(numbersList.get(0), numbersList.get(1)).sum();
     }
 
     /////////////////////////// Community variant ////////////////////////////////////
 
-    // return IntStream.range(Math.min(a, b), Math.max(a, b) + 1).sum();
+    public int getSum2(int a, int b) {
+        return IntStream.range(Math.min(a, b), Math.max(a, b) + 1).sum();
+    }
 
 }
