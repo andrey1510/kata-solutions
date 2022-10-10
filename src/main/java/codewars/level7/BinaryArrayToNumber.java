@@ -19,8 +19,6 @@ public class BinaryArrayToNumber {
 
     ////////////////////////// Community variant /////////////////////
 
-    // ToDo
-
     public static int ConvertBinaryArrayToInt2(List<Integer> binary) {
         return binary.stream()
                 .reduce((a, b) -> a*2+b)
