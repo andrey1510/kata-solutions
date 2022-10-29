@@ -54,7 +54,6 @@ public class Parser {
 
         System.out.println(filteredNumStr); //////////////////////////////////////////////////////// peek
 
-
         List<String> words = Arrays.stream(filteredNumStr.split(" ")).collect(Collectors.toList());
 
         System.out.println(words); ////////////////////////////////////////////////////////////////// peek
