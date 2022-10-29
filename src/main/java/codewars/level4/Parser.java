@@ -5,58 +5,65 @@ import java.util.stream.Collectors;
 
 public class Parser {
 
+    private final static Map<String, String> dictionary = new HashMap<>();
+    static {
+        dictionary.put("zero", "0");
+        dictionary.put("one", "1");
+        dictionary.put("two", "2");
+        dictionary.put("three", "3");
+        dictionary.put("four", "4");
+        dictionary.put("five", "5");
+        dictionary.put("six", "6");
+        dictionary.put("eight", "8");
+        dictionary.put("nine", "9");
+        dictionary.put("ten", "10");
+        dictionary.put("eleven", "11");
+        dictionary.put("twelve","12");
+        dictionary.put("thirteen","13");
+        dictionary.put("fourteen","14");
+        dictionary.put("fifteen","15");
+        dictionary.put("sixteen", "16");
+        dictionary.put("seventeen", "17");
+        dictionary.put("eighteen", "18");
+        dictionary.put("nineteen", "19");
+        dictionary.put("twenty", "20");
+        dictionary.put("thirty", "30");
+        dictionary.put("forty", "40");
+        dictionary.put("fifty", "50");
+        dictionary.put("sixty", "60");
+        dictionary.put("seventy", "70");
+        dictionary.put("eighty", "80");
+        dictionary.put("ninety", "90");
+        dictionary.put("hundred", "100");
+        dictionary.put("thousand", "1000");
+    }
+
     public static int parseInt(String numStr) {
 
-        Map<String, Integer> numbersTillHundred = new HashMap<>();
-        {
-            numbersTillHundred.put("zero", 0);
-            numbersTillHundred.put("one", 1);
-            numbersTillHundred.put("two", 2);
-            numbersTillHundred.put("three", 3);
-            numbersTillHundred.put("four", 4);
-            numbersTillHundred.put("five", 5);
-            numbersTillHundred.put("six", 6);
-            numbersTillHundred.put("eight", 8);
-            numbersTillHundred.put("nine", 9);
-            numbersTillHundred.put("ten", 10);
-            numbersTillHundred.put("eleven", 11);
-            numbersTillHundred.put("twelve",12);
-            numbersTillHundred.put("thirteen",13);
-            numbersTillHundred.put("fourteen",14);
-            numbersTillHundred.put("fifteen",15);
-            numbersTillHundred.put("sixteen", 16);
-            numbersTillHundred.put("seventeen", 17);
-            numbersTillHundred.put("nineteen", 19);
-            numbersTillHundred.put("thirty", 30);
-            numbersTillHundred.put("forty", 40);
-            numbersTillHundred.put("fifty", 50);
-            numbersTillHundred.put("sixty", 60);
-            numbersTillHundred.put("seventy", 70);
-            numbersTillHundred.put("eighty", 80);
-            numbersTillHundred.put("ninety", 90);
+        String filteredNumStr = numStr.replaceAll(" and ", " ").replaceAll("-", " ").toLowerCase();
+
+        if (filteredNumStr.contains("million")) {
+            return 1000000;
+        } else if (filteredNumStr.equals("zero")) {
+            return 0;
         }
 
-        Map<String, Integer> numbersFromHundred = new HashMap<>();
-        {
-            numbersFromHundred.put("hundred", 100);
-            numbersFromHundred.put("thousand", 1000);
-            numbersFromHundred.put("million", 1000000);
+        for (Map.Entry<String,String> e: dictionary.entrySet()) {
+            filteredNumStr = filteredNumStr.replace(e.getKey(), e.getValue());
         }
 
-        List<String> words = Arrays.stream(numStr.replaceAll(" and ", " ").replaceAll("-", "")
-                .split(""))
-                .collect(Collectors.toList());
+        System.out.println(filteredNumStr); //////////////////////////////////////////////////////// peek
 
 
-       // if ()
+        List<String> words = Arrays.stream(filteredNumStr.split(" ")).collect(Collectors.toList());
+
+        System.out.println(words); ////////////////////////////////////////////////////////////////// peek
+
 
 
 
         return 0;
     }
-
-
-
 
 
 }
