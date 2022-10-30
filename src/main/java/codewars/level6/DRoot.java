@@ -13,7 +13,7 @@ public class DRoot {
             i = IntStream.of(Arrays.stream(s.split(""))
                     .mapToInt(Integer::parseInt)
                     .toArray())
-                    .sum();
+                        .sum();
         }
         return i;
     }
