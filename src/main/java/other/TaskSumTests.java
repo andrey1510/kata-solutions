@@ -3,10 +3,10 @@ package other;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import java.util.Arrays;
-import static other.TaskInRaiff.calculateWithDoubleFor;
-import static other.TaskInRaiff.calculateWithDoubleForFirstPair;
+import static other.TaskSum.calculateWithDoubleFor;
+import static other.TaskSum.calculateWithDoubleForFirstPair;
 
-class TaskInRaiffTests {
+class TaskSumTests {
 
     int sum = 100;
     int[] arr = new int[]{1, 77, 12, 23, 99, 58, 2};

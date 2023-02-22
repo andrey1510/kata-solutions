@@ -2,7 +2,7 @@ package other;
 
 import java.util.*;
 
-public class TaskInRaiff {
+public class TaskSum {
 
     public static List<String> calculateWithDoubleFor(int sum, int[] arr) {
 
