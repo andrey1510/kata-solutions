@@ -2,8 +2,6 @@ package codewars.level6;
 
 // https://www.codewars.com/kata/53ad69892a27079b34000bd9
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
 
 public class AckermannFunction {
 
