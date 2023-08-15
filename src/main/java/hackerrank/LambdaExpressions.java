@@ -24,7 +24,7 @@ class MyMath {
     }
 
     public PerformOperation isPrime() {
-        return num -> IntStream.range(2, num).noneMatch(i -> num%i == 0);
+        return num -> IntStream.range(1, num).noneMatch(i -> num%i == 0);
     }
 
     public PerformOperation isPalindrome() {
