@@ -7,8 +7,8 @@ import lombok.*;
 @AllArgsConstructor
 @RequiredArgsConstructor
 public class Account {
-    String accountNumber;
-    Integer balance;
-    Status status;
-    Bank Bank;
+    private String accountNumber;
+    private Integer balance;
+    private Status status;
+    private Bank bank;
 }

@@ -11,7 +11,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class Bank {
 
-    String bankTitle;
-    String bankNumber;
+    private String bankTitle;
+    private String bankNumber;
 
 }
