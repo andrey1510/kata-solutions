@@ -1,5 +1,7 @@
 package codewars.level6;
 
+// https://www.codewars.com/kata/514b92a657cdc65150000006
+
 import java.util.stream.IntStream;
 
 public class MultipliesOfThreeOrFive {

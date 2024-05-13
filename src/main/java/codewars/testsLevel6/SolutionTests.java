@@ -1,13 +1,13 @@
 package codewars.testsLevel6;
 
-import codewars.level6.MultipliesOfThreeOrFive;
+import codewars.level6.MultipliesOfThreeOrFiveKt;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class SolutionTests {
 
-    MultipliesOfThreeOrFive test = new MultipliesOfThreeOrFive();
+    MultipliesOfThreeOrFiveKt test = new MultipliesOfThreeOrFiveKt();
 
     @Test
     public void test() {
