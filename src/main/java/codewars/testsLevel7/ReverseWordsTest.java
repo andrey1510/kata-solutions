@@ -1,7 +1,7 @@
 package codewars.testsLevel7;
 
 import codewars.level7.ReverseWords;
-import codewars.level7.ReverseWordsKt;
+import codewars.level7.ReverseWordsKotlin;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -18,9 +18,9 @@ public class ReverseWordsTest {
 
     @Test
     public void testReverseWordsKt() {
-        assertEquals("cba !fed", ReverseWordsKt.reverseWords("abc def!"));
-        assertEquals("a b c", ReverseWordsKt.reverseWords("a b c"));
-        assertEquals("   ", ReverseWordsKt.reverseWords("   "));
+        assertEquals("cba !fed", ReverseWordsKotlin.reverseWords("abc def!"));
+        assertEquals("a b c", ReverseWordsKotlin.reverseWords("a b c"));
+        assertEquals("   ", ReverseWordsKotlin.reverseWords("   "));
     }
 
 }

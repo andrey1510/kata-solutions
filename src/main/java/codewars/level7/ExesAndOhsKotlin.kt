@@ -1,15 +1,6 @@
 package codewars.level7
 
-import codewars.level7.ExesAndOhs.getXO
-
-fun main() {
-
-    print( getXO("oOxx") )
-
-}
-
-
-class ExesAndOhsKt {
+class ExesAndOhsKotlin {
 
     companion object {
         fun getXO(str: String): Boolean {

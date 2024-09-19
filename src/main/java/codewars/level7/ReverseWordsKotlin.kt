@@ -3,7 +3,7 @@ package codewars.level7
 import java.util.*
 import java.util.stream.Collectors
 
-class ReverseWordsKt {
+class ReverseWordsKotlin {
 
 
     companion object {

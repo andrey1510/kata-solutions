@@ -1,6 +1,6 @@
 package codewars.testsLevel7;
 
-import codewars.level7.ExesAndOhsKt;
+import codewars.level7.ExesAndOhsKotlin;
 import org.junit.Test;
 
 import static org.junit.Assert.assertFalse;
@@ -11,10 +11,10 @@ public class ExesAndOhsTests {
     @Test
     public void testIsogramKt() {
 
-        assertTrue(ExesAndOhsKt.Companion.getXO("ooxx"));
-        assertTrue(ExesAndOhsKt.Companion.getXO("ooxXm"));
-        assertFalse(ExesAndOhsKt.Companion.getXO("xooxx"));
-        assertTrue(ExesAndOhsKt.Companion.getXO("zpzpzpp"));
+        assertTrue(ExesAndOhsKotlin.Companion.getXO("ooxx"));
+        assertTrue(ExesAndOhsKotlin.Companion.getXO("ooxXm"));
+        assertFalse(ExesAndOhsKotlin.Companion.getXO("xooxx"));
+        assertTrue(ExesAndOhsKotlin.Companion.getXO("zpzpzpp"));
 
     }
 }
